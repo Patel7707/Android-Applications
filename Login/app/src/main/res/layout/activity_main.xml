@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#05F9D0">
+
+
+   <TextView
+       android:id="@+id/txt_welcome"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Registration"
+       android:background="#B3F309"
+       android:textColor="#000"
+       android:textAlignment="center"
+       android:textSize="30dp"
+       />
+
+    <EditText
+        android:id="@+id/edt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_welcome"
+        android:hint="First Name"
+        />
+
+    <EditText
+        android:id="@+id/edt_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_firstname"
+        android:hint="Last Name"
+        />
+
+    <EditText
+        android:id="@+id/edt_emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_lastname"
+        android:hint="Email ID"
+        />
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_emailid"
+        android:hint="Password"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chk_male"
+        android:text="Male"
+        android:layout_below="@+id/edt_password"
+        android:textColor="#080808"
+        android:onClick="onCheckboxClicked"
+        />
+    <CheckBox
+        android:id="@+id/chk_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_below="@+id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:textColor="#080808"
+        />
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_male"
+        android:text="Register"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

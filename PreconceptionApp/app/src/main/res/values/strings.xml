@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PreconceptionApp</string>
+    <string name="Open">Open Navigation Drawer</string>
+    <string name="Close">Close Navigation Drawer</string>
+
+
+    <string-array name="Months">
+        <item>First Months - Three Months</item>
+        <item>Three Months - Six Months</item>
+        <item>Six Months - Nine Months</item>
+    </string-array>
+</resources>

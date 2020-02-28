@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_Exercise"
+            android:icon="@drawable/ic_fitness_center_black_24dp"
+            android:title="Exercise" />
+
+        <item
+            android:id="@+id/nav_meal"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="Meal" />
+
+        <item
+            android:id="@+id/nav_monthly"
+
+            android:title="Monthly Report " />
+
+        <item
+            android:id="@+id/nav_weekly"
+            android:title="Weekly Report" />
+
+        <item
+            android:id="@+id/nav_updates"
+            android:title="Updates" />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/nav_contact"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+</menu>
