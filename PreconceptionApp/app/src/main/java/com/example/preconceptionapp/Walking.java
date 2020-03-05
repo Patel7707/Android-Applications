@@ -9,12 +9,17 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.animation.ObjectAnimator;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -31,24 +36,30 @@ import lecho.lib.hellocharts.view.LineChartView;
 
 public class Walking extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
+    TextView Weekly1;
     NavigationView navigationView;
     Toolbar toolbar;
     LineChartView LineChart;
-    String[] XData = {"Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept",
-            "Oct", "Nov", "Dec"};
-    int[] YData = {50, 20, 15, 30, 20, 60, 15, 40, 45, 10, 90, 18};
+    String[] XData = {"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
+    int[] YData = {5206, 2500, 8500, 3000, 10000, 6000, 4000};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_walking);
 
+        Weekly1=findViewById(R.id.WeeklyReport);
+        LineChart = findViewById(R.id.chart);
+
         drawerLayout = findViewById(R.id.walk1);
         navigationView = findViewById(R.id.walk2);
         toolbar = findViewById(R.id.walk3);
-        LineChart = findViewById(R.id.chart);
+
+
         List Y = new ArrayList();
         List X = new ArrayList();
+
+
 
 
 
@@ -75,6 +86,7 @@ public class Walking extends AppCompatActivity implements NavigationView.OnNavig
 
         //able to see the Android line chart
         LineChart.setLineChartData(data);
+
 
         //X-Axis values
         Axis axis = new Axis();
@@ -103,7 +115,7 @@ public class Walking extends AppCompatActivity implements NavigationView.OnNavig
 
         // Y-Axis data inside the line chart
         Viewport viewport = new Viewport(LineChart.getMaximumViewport());
-        viewport.top =100;
+        viewport.top =10000;
         LineChart.setMaximumViewport(viewport);
         LineChart.setCurrentViewport(viewport);
 

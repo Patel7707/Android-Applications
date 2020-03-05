@@ -6,18 +6,37 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.preconceptionapp.Util.Constants;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Registration extends AppCompatActivity {
 
     RelativeLayout rellay1, rellay2;
     EditText Username, Password, Email, Phone, Weight;
-    Button mLogin;
+    ProgressBar Loading;
+    Button mLogin,mSignup;
+
 
 
     Handler handler = new Handler();
@@ -38,6 +57,13 @@ public class Registration extends AppCompatActivity {
         rellay1 = (RelativeLayout) findViewById(R.id.relay1);
         rellay2 = (RelativeLayout) findViewById(R.id.relay2);
         mLogin = (Button) findViewById(R.id.login);
+        Username=findViewById(R.id.Username);
+        Password=findViewById(R.id.Password);
+        Email=findViewById(R.id.Email);
+        Phone=findViewById(R.id.Phone);
+        Weight=findViewById(R.id.Weight);
+        Loading=findViewById(R.id.loading);
+        mSignup=findViewById(R.id.Signup);
 
         handler.postDelayed(runnable, 300);
 
@@ -47,6 +73,88 @@ public class Registration extends AppCompatActivity {
                 startActivity(new Intent(Registration.this, Login.class));
             }
         });
+
+        mSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Regist();
+            }
+        });
+
+    }
+
+    private  void Regist()
+    {
+
+
+        final String Username=this.Username.getText().toString().trim();
+        final String Password=this.Password.getText().toString().trim();
+        final String Email=this.Email.getText().toString().trim();
+        final String Phone=this.Phone.getText().toString().trim();
+        final String Weight=this.Weight.getText().toString().trim();
+        register(Username,Password,Email,Phone,Weight);
+    }
+
+    private void register(final String username, final String password, final String email, final String phone, final String weight) {
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        Loading.setVisibility(View.VISIBLE);
+        mSignup.setVisibility(View.GONE);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.registerUrl, new Response.Listener<String>() {
+            @Override    public void onResponse(String response) {
+
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+
+                    String signup = jsonObject.getString("data");
+                    if(signup.equals("success"))
+                    {
+                        Toast.makeText(Registration.this, "Data Inserted..", Toast.LENGTH_SHORT).show();
+                        Intent Login = new Intent(Registration.this,Login.class);
+                        startActivity(Login);
+                    }
+                    else
+                    {
+                        Toast.makeText(Registration.this, " Data already Exist Enter Valid Data", Toast.LENGTH_SHORT).show();
+                        Loading.setVisibility(View.GONE);
+                        mLogin.setVisibility(View.VISIBLE);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(Registration.this, "Error!" +e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Loading.setVisibility(View.GONE);
+                    mLogin.setVisibility(View.VISIBLE);
+                }
+                Loading.setVisibility(View.GONE);
+                mLogin.setVisibility(View.VISIBLE);
+
+
+
+
+            }
+        }, new Response.ErrorListener() {
+            @Override    public void onErrorResponse(VolleyError error) {
+
+                Toast.makeText(Registration.this, "Error", Toast.LENGTH_SHORT).show();
+
+            }
+        }) {
+            @Override    protected Map<String, String> getParams() throws AuthFailureError {
+
+                Map<String, String> params = new HashMap<String, String>();
+
+                params.put("username", username);
+                params.put("password", password);
+                params.put("email", email);
+                params.put("phone", phone);
+                params.put("weight", weight);
+
+                return params;
+            }
+
+
+        };
+        requestQueue.add(stringRequest);
+
 
     }
 

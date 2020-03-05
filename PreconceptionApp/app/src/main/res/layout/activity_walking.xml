@@ -258,33 +258,60 @@
                                     android:layout_marginLeft="20dp"
                                     android:fontFamily="@font/baloo"
                                     android:text="Activity Result"
-                                    android:textSize="30sp"/>
+                                    android:textSize="30sp" />
+
+
+
+                                <org.eazegraph.lib.charts.PieChart
+                                    android:id="@+id/graph"
+                                    android:layout_width="300dp"
+                                    android:layout_height="250dp"
+                                    android:layout_below="@+id/total"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_centerHorizontal="true"
+                                    app:egHighlightStrength="1"
+                                    app:egInnerPadding="85"
+                                    app:egLegendHeight="0dp"/>
+
+
 
                                 <TextView
+                                    android:id="@+id/steps"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="170dp"
+                                    android:gravity="center"
+                                    android:text="10.000"
+                                    android:textSize="45sp" />
+
+                                <TextView
+                                    android:id="@+id/unit"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Monthly Report"
-                                    android:layout_below="@+id/total"
+                                    android:layout_below="@+id/steps"
                                     android:layout_centerHorizontal="true"
-                                    android:textSize="16sp"
+                                    android:text="Steps"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/WeeklyReport"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/graph"
+                                    android:layout_centerHorizontal="true"
                                     android:fontFamily="@font/antic"
-                                    android:textStyle="bold"/>
+                                    android:text="Weekly Report"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
 
                                 <lecho.lib.hellocharts.view.LineChartView
                                     android:id="@+id/chart"
-                                    android:layout_below="@+id/total"
                                     android:layout_width="match_parent"
                                     android:layout_height="250dp"
-                                    android:layout_marginBottom="20dp"/>
-
-
-
-
-
-
-
-
-
+                                    android:layout_marginTop="20dp"
+                                    android:layout_below="@+id/graph"
+                                    android:layout_marginBottom="20dp" />
 
 
                             </RelativeLayout>
