@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Exercise">
+    android:background="@drawable/exercise_background"
+    tools:context=".Activity.Exercise">
 
     <ImageButton
         android:id="@+id/home"
@@ -36,17 +37,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView2"
@@ -54,6 +57,7 @@
                             android:layout_height="100dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Abs"
                             app:srcCompat="@drawable/abs" />
 
                         <TextView
@@ -72,11 +76,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView3"
@@ -84,6 +90,7 @@
                             android:layout_height="100dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Biceps"
                             app:srcCompat="@drawable/biceps" />
 
                         <TextView
@@ -105,13 +112,14 @@
                 android:layout_height="175dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -123,6 +131,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Calves"
                             app:srcCompat="@drawable/calves" />
 
                         <TextView
@@ -141,7 +150,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -153,6 +163,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Forearm"
                             app:srcCompat="@drawable/forearm" />
 
                         <TextView
@@ -174,13 +185,14 @@
                 android:layout_height="175dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -192,6 +204,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Glutes"
                             app:srcCompat="@drawable/glutes" />
 
                         <TextView
@@ -210,7 +223,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -222,6 +236,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Hamstrings"
                             app:srcCompat="@drawable/hamstrings" />
 
                         <TextView
@@ -242,13 +257,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -260,6 +276,7 @@
                             android:layout_height="100dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Lats"
                             app:srcCompat="@drawable/lats" />
 
                         <TextView
@@ -278,7 +295,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -290,6 +308,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Middle_Back"
                             app:srcCompat="@drawable/middle_back" />
 
                         <TextView
@@ -310,13 +329,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -328,6 +348,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Lower_Back"
                             app:srcCompat="@drawable/lower_back" />
 
                         <TextView
@@ -346,7 +367,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -358,6 +380,7 @@
                             android:layout_height="100dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Neck"
                             app:srcCompat="@drawable/neck" />
 
                         <TextView
@@ -378,13 +401,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -406,6 +430,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Quads"
                             app:srcCompat="@drawable/quads" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -414,7 +439,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -426,6 +452,7 @@
                             android:layout_height="100dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Shoulders"
                             app:srcCompat="@drawable/shoulders" />
 
                         <TextView
@@ -446,13 +473,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -464,6 +492,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Traps"
                             app:srcCompat="@drawable/traps" />
 
                         <TextView
@@ -482,7 +511,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -494,6 +524,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
+                            android:onClick="Triceps"
                             app:srcCompat="@drawable/triceps" />
 
                         <TextView

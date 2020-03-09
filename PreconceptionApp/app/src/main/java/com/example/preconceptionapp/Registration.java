@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.ContactsContract;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -87,12 +89,38 @@ public class Registration extends AppCompatActivity {
     {
 
 
-        final String Username=this.Username.getText().toString().trim();
-        final String Password=this.Password.getText().toString().trim();
-        final String Email=this.Email.getText().toString().trim();
-        final String Phone=this.Phone.getText().toString().trim();
-        final String Weight=this.Weight.getText().toString().trim();
-        register(Username,Password,Email,Phone,Weight);
+        final String username=this.Username.getText().toString().trim();
+        final String password=this.Password.getText().toString().trim();
+        final String email=this.Email.getText().toString().trim();
+        final String phone=this.Phone.getText().toString().trim();
+        final String weight=this.Weight.getText().toString().trim();
+
+
+        if(TextUtils.isEmpty(username)){
+            Username.setError("Username is Required");
+            return;
+        }
+        if(TextUtils.isEmpty(password)){
+            Password.setError("Password is Required");
+            return;
+        }
+        if(password.length() < 6){
+            Password.setError("Password Must be 6 Characters Long");
+            return;
+        }
+        if(TextUtils.isEmpty(email)){
+            Email.setError("Email is Required");
+            return;
+        }
+        if(TextUtils.isEmpty(phone)){
+            Phone.setError("Phone is Required");
+            return;
+        }
+        if(TextUtils.isEmpty(weight)){
+            Weight.setError("Weight is Required");
+            return;
+        }
+        register(username,password,email,phone,weight);
     }
 
     private void register(final String username, final String password, final String email, final String phone, final String weight) {

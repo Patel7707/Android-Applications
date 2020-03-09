@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@drawable/exercise_background"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Registration">
+    tools:context=".Activity.Registration">
 
 
     <ImageView
         android:id="@+id/reg_image"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:src="@drawable/logo_transparent"
+        android:src="@drawable/eg"
         android:transitionName="logo_image"/>
 
     <TextView
         android:id="@+id/reg_logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="-70dp"
         android:fontFamily="@font/bungee"
         android:text="Welcome"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:textColor="#000"
         android:transitionName="logo_text"/>
 

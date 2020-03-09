@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/profile_background"
-    tools:context=".Personal_Details">
+    android:background="@drawable/exercise_background"
+    tools:context=".Activity.Personal_Details">
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -40,7 +40,6 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/profile"
         app:civ_border="false"
-        app:civ_border_color_end="#00000000"
         app:layout_constraintBottom_toBottomOf="@+id/relavtive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/relavtive"

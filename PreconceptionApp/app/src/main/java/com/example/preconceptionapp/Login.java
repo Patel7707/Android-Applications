@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -83,6 +84,14 @@ public class Login extends AppCompatActivity {
 
         final String username = this.Username.getText().toString().trim();
         final String password = this.Password.getText().toString().trim();
+        if(TextUtils.isEmpty(username)){
+            Username.setError("Username is Required");
+            return;
+        }
+        if(TextUtils.isEmpty(password)){
+            Password.setError("Password is Required");
+            return;
+        }
         login(username, password);
     }
 

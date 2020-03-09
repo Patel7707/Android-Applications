@@ -6,4 +6,9 @@
     <color name="Primary">#26A69A</color>
     <color name="Dark">#009688</color>
     <color name="Accent">#048B7A</color>
+    <color name="gradientStart">#1FA2FF</color>
+    <color name="gradientCenter">#12D8FA</color>
+    <color name="gradientEnd">#A6FFCB</color>
+    <color name="Textcolor">#FFF</color>
+
 </resources>

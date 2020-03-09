@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard"
+    tools:context=".Activity.Dashboard"
     android:fitsSystemWindows="true"
     android:id="@+id/drawer_layout"
+    android:background="@drawable/exercise_background"
     tools:openDrawer="left">
 
     <com.google.android.material.navigation.NavigationView
@@ -19,7 +20,7 @@
         android:scrollbarStyle="insideInset"
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
-        app:itemTextColor="#FF9966"
+        app:itemTextColor="#050004"
         android:textAlignment="textStart"
         style="@style/TextAppearance.AppCompat.Menu"/>
 
@@ -39,8 +40,8 @@
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_below="@+id/Toolbar"
-        android:layout_marginLeft="24dp"
-        android:src="@drawable/logo_transparent" />
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/eg" />
 
     <TextView
         android:id="@+id/Fitness"
@@ -82,12 +83,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="#00000000"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -119,6 +121,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="#00000000"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -152,13 +155,14 @@
                 android:layout_height="175dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#00000000">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -188,6 +192,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="#00000000"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -222,12 +227,13 @@
                 android:layout_height="175dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="0dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="#00000000"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -250,7 +256,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="2dp"
                             android:fontFamily="@font/aclonica"
-                            android:text="Updates" />
+                            android:text="Messages" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -258,6 +264,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="#00000000"
                     android:layout_weight="1">
 
                     <RelativeLayout
