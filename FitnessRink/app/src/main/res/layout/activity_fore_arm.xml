@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/exercise_background"
-    tools:context=".Activity.Biceps">
+    tools:context=".Activity.ForeArm">
 
     <ImageButton
         android:id="@+id/home"
@@ -26,7 +26,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/bangers"
         android:gravity="center"
-        android:text="BICEPS"
+        android:text="CALVES"
         android:textSize="50dp" />
 
     <ImageView
@@ -36,7 +36,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
-        android:src="@drawable/biceps" />
+        android:src="@drawable/calves" />
 
 
     <TextView
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Barbell Bent-over Row"
+            android:text="Standing calf raise"
             android:textColor="@color/Textcolor" />
 
 
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Chin up"
+            android:text="Seated calf raise"
             android:textColor="@color/Textcolor" />
 
 
@@ -122,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Decline Dumbbell Curl"
+            android:text="Farmer’s walk on toes"
             android:textColor="@color/Textcolor" />
 
 
@@ -145,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Ez Bar Curl"
+            android:text="Jump rope"
             android:textColor="@color/Textcolor" />
 
 
@@ -168,7 +168,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Hammer Curl"
+            android:text="Dumbbell jump squat"
             android:textColor="@color/Textcolor" />
 
 
@@ -191,7 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Incline Dumbbell Curl"
+            android:text="Downward dog"
             android:textColor="@color/Textcolor" />
 
 
@@ -214,7 +214,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Reverse Curl Straight Bar"
+            android:text="Straight-leg calf stretch"
             android:textColor="@color/Textcolor" />
 
 
@@ -228,7 +228,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="19dp"
         android:orientation="horizontal">
 
         <TextView
@@ -240,7 +240,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Standing Dumbbell Curl"
+            android:text="Standing wall calf stretch"
             android:textColor="@color/Textcolor" />
 
 
@@ -253,7 +253,7 @@
         android:layout_below="@id/line8"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="32.5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -265,7 +265,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Underhand Seated Row"
+            android:text="Lateral Lunge to Curtsy"
             android:textColor="@color/Textcolor" />
 
 
@@ -278,7 +278,7 @@
         android:layout_below="@id/line9"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginRight="81dp"
         android:orientation="horizontal">
 
         <TextView
@@ -290,7 +290,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Zottman Curl"
+            android:text="Bosu Ball Squat"
             android:textColor="@color/Textcolor" />
 
 
@@ -401,7 +401,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Barbell"
+            android:text="Bosu Ball"
             android:textColor="@color/Textcolor" />
 
 
@@ -544,4 +544,5 @@
         </LinearLayout>
 
     </ScrollView>
+
 </RelativeLayout>

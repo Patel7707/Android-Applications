@@ -159,28 +159,28 @@ public class Registration extends AppCompatActivity {
 
 
             }
-        }, new Response.ErrorListener() {
-            @Override    public void onErrorResponse(VolleyError error) {
+            }, new Response.ErrorListener() {
+                @Override    public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(Registration.this, "Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Registration.this, "Error", Toast.LENGTH_SHORT).show();
 
-            }
-        }) {
-            @Override    protected Map<String, String> getParams() throws AuthFailureError {
+                }
+            }) {
+                @Override    protected Map<String, String> getParams() throws AuthFailureError {
 
-                Map<String, String> params = new HashMap<String, String>();
+                    Map<String, String> params = new HashMap<String, String>();
 
-                params.put("username", username);
-                params.put("password", password);
-                params.put("email", email);
-                params.put("phone", phone);
-                params.put("weight", weight);
+                    params.put("username", username);
+                    params.put("password", password);
+                    params.put("email", email);
+                    params.put("phone", phone);
+                    params.put("weight", weight);
 
-                return params;
-            }
+                    return params;
+                }
 
 
-        };
+            };
         requestQueue.add(stringRequest);
 
 

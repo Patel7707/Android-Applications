@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Barbell Floor Wiper"
+            android:text="Standing calf raise"
             android:textColor="@color/Textcolor" />
 
 
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Cocoon"
+            android:text="Seated calf raise"
             android:textColor="@color/Textcolor" />
 
 
@@ -122,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Dish Rocks"
+            android:text="Farmer’s walk on toes"
             android:textColor="@color/Textcolor" />
 
 
@@ -145,8 +145,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Dragon Flag"
-            android:textColor="@color/Textcolor"/>
+            android:text="Jump rope"
+            android:textColor="@color/Textcolor" />
 
 
     </LinearLayout>
@@ -168,8 +168,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Hanging Leg Raise"
-            android:textColor="@color/Textcolor"/>
+            android:text="Dumbbell jump squat"
+            android:textColor="@color/Textcolor" />
 
 
     </LinearLayout>
@@ -191,7 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Medicine Ball Slam"
+            android:text="Downward dog"
             android:textColor="@color/Textcolor" />
 
 
@@ -214,7 +214,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Sandbag Sit-Up"
+            android:text="Straight-leg calf stretch"
             android:textColor="@color/Textcolor" />
 
 
@@ -228,7 +228,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="88dp"
+        android:layout_marginRight="19dp"
         android:orientation="horizontal">
 
         <TextView
@@ -240,7 +240,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Side Jackknife"
+            android:text="Standing wall calf stretch"
             android:textColor="@color/Textcolor" />
 
 
@@ -253,7 +253,7 @@
         android:layout_below="@id/line8"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="111dp"
+        android:layout_marginRight="32.5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -265,7 +265,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Slide Plank"
+            android:text="Lateral Lunge to Curtsy"
             android:textColor="@color/Textcolor" />
 
 
@@ -278,7 +278,7 @@
         android:layout_below="@id/line9"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginRight="81dp"
         android:orientation="horizontal">
 
         <TextView
@@ -290,7 +290,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Superman With A Twist"
+            android:text="Bosu Ball Squat"
             android:textColor="@color/Textcolor" />
 
 
@@ -333,7 +333,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:text="Dumbbell"
-            android:textColor="@color/Textcolor"/>
+            android:textColor="@color/Textcolor" />
 
 
     </LinearLayout>
@@ -379,7 +379,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:text="Resistance Band"
-            android:textColor="@color/Textcolor"/>
+            android:textColor="@color/Textcolor" />
 
 
     </LinearLayout>
@@ -401,8 +401,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Yoga Matt"
-            android:textColor="@color/Textcolor"/>
+            android:text="Bosu Ball"
+            android:textColor="@color/Textcolor" />
 
 
     </LinearLayout>
@@ -465,7 +465,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="5dp"
                     android:text=" Level II"
-                    android:textColor="@color/Textcolor"/>
+                    android:textColor="@color/Textcolor" />
 
                 <TextView
                     android:layout_width="wrap_content"

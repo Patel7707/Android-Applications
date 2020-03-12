@@ -126,21 +126,26 @@
             android:id="@+id/group"
             android:orientation="horizontal">
 
-            <RadioButton
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/Member"
-                android:text="Member"
-                android:layout_marginLeft="50dp"
-                android:layout_gravity="left"/>
+                android:text="Gender"
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"/>
 
             <RadioButton
-                android:id="@+id/Trainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_gravity="right"
-                android:text="Trainer   " />
+                android:id="@+id/Male"
+                android:text="Male"
+                android:layout_marginLeft="50dp"/>
+
+            <RadioButton
+                android:id="@+id/Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Female" />
 
 
         </RadioGroup>
