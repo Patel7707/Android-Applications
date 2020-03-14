@@ -21,7 +21,7 @@ public class Monthly_Report extends AppCompatActivity  implements NavigationView
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_monthly__report);
+        setContentView(R.layout.activity_monthly_report);
         drawerLayout = findViewById(R.id.month1);
         navigationView = findViewById(R.id.month2);
         toolbar = findViewById(R.id.month3);

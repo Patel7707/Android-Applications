@@ -2,39 +2,42 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/month1"
+    android:id="@+id/water1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Monthly_Report"
     android:fitsSystemWindows="true"
-    tools:context=".Weekly_Report"
     tools:openDrawer="start">
 
-    <!--    <com.google.android.material.navigation.NavigationView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:id="@+id/month2"-->
-    <!--        app:headerLayout="@layout/header"-->
-    <!--        app:menu="@menu/main_menu"-->
-    <!--        android:scrollbars="vertical"-->
-    <!--        android:padding="-10dp"-->
-    <!--        android:layout_gravity="start"/>-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/water2"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:scrollbars="vertical"
+        android:padding="-10dp"
+        android:layout_gravity="start"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/month3"
+            android:id="@+id/water3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/menu" />
 
         <RelativeLayout
             android:id="@+id/relative2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/month3">
+            android:layout_below="@id/water3">
 
             <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appbar"
@@ -48,33 +51,33 @@
 
 
                     <ImageView
-                        android:id="@+id/walk4"
+                        android:id="@+id/water4"
                         android:layout_width="180dp"
                         android:layout_height="198dp"
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="-10dp"
-                        android:src="@drawable/weekly" />
+                        android:src="@drawable/water" />
 
                     <TextView
-                        android:id="@+id/walk5"
+                        android:id="@+id/water5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="40dp"
                         android:fontFamily="@font/bungee"
-                        android:text="Weekly Progress"
+                        android:text="Water    Progress"
                         android:textSize="38dp" />
 
                     <TextView
-                        android:id="@+id/walk6"
+                        android:id="@+id/water6"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/walk5"
+                        android:layout_below="@id/water5"
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/antic"
-                        android:text="You don't make progress by standing on the sidelines. You make progress by implementing ideas."
+                        android:text="Water is not the source of life, it is life. WATER, the DNA of life. "
                         android:textSize="15dp" />
 
                 </RelativeLayout>
@@ -85,97 +88,6 @@
                     android:layout_marginTop="-10dp"
                     android:padding="10dp">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="0dp"
-                        android:layout_height="125dp"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:elevation="10dp"
-                        android:outlineProvider="none"
-                        app:cardBackgroundColor="#00000000">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_centerHorizontal="true"
-                                android:src="@drawable/walk" />
-
-                            <TextView
-                                android:id="@+id/counterlabel"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:fontFamily="@font/bungee"
-                                android:includeFontPadding="false"
-                                android:text="O"
-                                android:textColor="#fff"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/weeklyreport"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@+id/counterlabel"
-                                android:layout_centerHorizontal="true"
-                                android:includeFontPadding="false"
-                                android:text="Step/Week"
-                                android:textColor="#fff"
-                                android:textSize="14sp" />
-
-                        </RelativeLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="0dp"
-                        android:layout_height="125dp"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:elevation="10dp"
-                        android:outlineProvider="none"
-                        app:cardBackgroundColor="#00000000">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_centerHorizontal="true"
-                                android:src="@drawable/calories" />
-
-                            <TextView
-                                android:id="@+id/calorieslabel1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:fontFamily="@font/bungee"
-                                android:includeFontPadding="false"
-                                android:text="0"
-                                android:textColor="#fff"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/caloriesreport1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@+id/calorieslabel1"
-                                android:layout_centerHorizontal="true"
-                                android:includeFontPadding="false"
-                                android:text="Calories"
-                                android:textColor="#fff"
-                                android:textSize="14sp" />
-
-                        </RelativeLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
 
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="0dp"
@@ -222,6 +134,25 @@
                         </RelativeLayout>
 
                     </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="125dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:elevation="10dp"
+                        android:outlineProvider="none"
+                        app:cardBackgroundColor="#00000000">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
 
             </com.google.android.material.appbar.AppBarLayout>
@@ -238,35 +169,100 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/WeeklyReport"
+                            android:id="@+id/select"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:layout_centerHorizontal="true"
-                            android:fontFamily="@font/antic"
-                            android:text="Weekly Report"
-                            android:textSize="16sp"
+                            android:layout_marginLeft="35dp"
+                            android:text="Only Select if Drank Water."
+                            android:textColor="#050004"
                             android:textStyle="bold" />
 
-                        <lecho.lib.hellocharts.view.LineChartView
-                            android:id="@+id/week"
+                        <RadioGroup
+                            android:id="@+id/group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/select"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:text="Yes" />
+
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/water7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/group"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Enter the Liters of Water Drank/Day."
+                            android:textColor="#050004"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <EditText
+                            android:id="@+id/water8"
                             android:layout_width="match_parent"
-                            android:layout_height="350dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginBottom="20dp" />
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/water7"
+                            android:layout_marginLeft="35dp"
+                            android:hint="500 L/ML"
+                            android:textColor="#050004"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/water9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/water8"
+                            android:layout_marginTop="30dp"
+                            android:background="#00000000"
+                            android:text="Calculate"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/water11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="250dp"
+                            android:background="#00000000"
+                            android:text="Submit" />
+
+                        <TextView
+                            android:id="@+id/water10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/group"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginTop="30dp"
+                            android:text="At least Need to Drink 2 Liters of Water."
+                            android:textColor="#050004"
+                            android:visibility="invisible" />
+
+
                     </RelativeLayout>
                 </ScrollView>
             </RelativeLayout>
 
         </RelativeLayout>
 
-
     </RelativeLayout>
-
-
 </androidx.drawerlayout.widget.DrawerLayout>

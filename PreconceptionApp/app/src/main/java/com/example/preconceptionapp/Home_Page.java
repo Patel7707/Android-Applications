@@ -61,8 +61,8 @@ public class Home_Page extends AppCompatActivity implements NavigationView.OnNav
     }
 
     public void Profile(View view) {
-        Intent IO=new Intent(this,Profile.class);
-        startActivity(IO);
+        Intent Profile=new Intent(this,Profile.class);
+        startActivity(Profile);
         finish();
     }
 
@@ -75,55 +75,60 @@ public class Home_Page extends AppCompatActivity implements NavigationView.OnNav
 
             Intent  Home = new Intent(Home_Page.this,Home_Page.class);
             startActivity(Home);
-            finish();
+
         }
         if (id == R.id.nav_weekly)
         {
 
-            Intent  Home = new Intent(Home_Page.this,Weekly_Report.class);
-            startActivity(Home);
-            finish();
+            Intent  Weekly = new Intent(Home_Page.this,Weekly_Report.class);
+            startActivity(Weekly);
+
         }
         if (id == R.id.nav_monthly)
         {
 
-            Intent  Home = new Intent(Home_Page.this,Monthly_Report.class);
-            startActivity(Home);
-            finish();
+            Intent  Monthly = new Intent(Home_Page.this,Monthly_Report.class);
+            startActivity(Monthly);
+
         }
         if (id == R.id.nav_walk)
         {
 
-            Intent  Home = new Intent(Home_Page.this,Walking.class);
-            startActivity(Home);
-            finish();
+            Intent  Walk = new Intent(Home_Page.this,Walking.class);
+            startActivity(Walk);
+
         }
         if (id == R.id.nav_meal)
         {
 
-            Intent  Home = new Intent(Home_Page.this,Meal.class);
-            startActivity(Home);
-            finish();
+            Intent  Meal = new Intent(Home_Page.this,Meal.class);
+            startActivity(Meal);
+
         }
         if (id == R.id.nav_profile)
         {
 
-            Intent  Home = new Intent(Home_Page.this,Profile.class);
-            startActivity(Home);
-            finish();
+            Intent  Profile = new Intent(Home_Page.this,Profile.class);
+            startActivity(Profile);
+
         }
         return false;
     }
 
     public void Walking(View view) {
-        Intent  Home = new Intent(Home_Page.this,Walking.class);
-        startActivity(Home);
-        finish();
+        Intent  Walking = new Intent(Home_Page.this,Walking.class);
+        startActivity(Walking);
+
     }
 
     public void Meal(View view) {
-        Intent  Home = new Intent(Home_Page.this,Meal.class);
-        startActivity(Home);
-        finish();
+        Intent  Meal = new Intent(Home_Page.this,Meal.class);
+        startActivity(Meal);
+
+    }
+
+    public void Water(View view) {
+        Intent  Water = new Intent(Home_Page.this,Water.class);
+        startActivity(Water);
     }
 }

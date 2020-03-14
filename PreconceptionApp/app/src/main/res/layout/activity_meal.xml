@@ -9,15 +9,15 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/meal2"-->
-<!--        app:headerLayout="@layout/header"-->
-<!--        app:menu="@menu/main_menu"-->
-<!--        android:scrollbars="vertical"-->
-<!--        android:padding="-10dp"-->
-<!--        android:layout_gravity="start"/>-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/meal2"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:scrollbars="vertical"
+        android:padding="-10dp"
+        android:layout_gravity="start"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

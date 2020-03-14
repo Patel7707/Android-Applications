@@ -2,18 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.preconceptionapp">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
         android:resizeable="true"
         android:smallScreens="true"
-        android:normalScreens="true"
-        android:largeScreens="true"
-        android:xlargeScreens="true"
-        android:anyDensity="true">
-    </supports-screens>
+        android:xlargeScreens="true"></supports-screens>
 
     <application
         android:allowBackup="true"
@@ -23,7 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Meal"></activity>
+        <activity android:name=".Water"></activity>
+        <activity android:name=".Meal" />
         <activity android:name=".Walking" />
         <activity android:name=".Monthly_Report" />
         <activity android:name=".Weekly_Report" />
